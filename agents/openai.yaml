@@ -1,0 +1,4 @@
+interface:
+  display_name: "Novel Creator"
+  short_description: "Outline, draft, revise, and export novels"
+  default_prompt: "Use $novel-creator to turn my outline into a Chinese-first novel draft and export TXT output."

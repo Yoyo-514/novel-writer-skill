@@ -1,0 +1,11 @@
+{
+  "mode": "monolingual",
+  "primary_language": "zh",
+  "primary_language_name": "Simplified Chinese",
+  "translation_style": null,
+  "translation_timing": null,
+  "output_filenames": {
+    "primary": "novel_zh"
+  },
+  "configured_at": "2026-01-01T00:00:00Z"
+}

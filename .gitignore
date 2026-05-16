@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Local generated novel projects
+novel/
+draft/
+output/
+*.bak-*
+
+# Local editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local agent/runtime metadata
+.serena/
+.codex/
+.claude/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp

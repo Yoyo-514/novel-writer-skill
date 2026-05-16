@@ -1,0 +1,18 @@
+{
+  "genre": "general",
+  "genre_name": "General Fiction",
+  "pov": "third_limited",
+  "pov_description": "Third-person limited, bound to the POV character's knowledge boundary",
+  "tense": "past",
+  "chapter_word_count_target": 3000,
+  "chapter_word_count_range": [2400, 4200],
+  "scene_word_count_target": 1000,
+  "scene_word_count_range": [700, 1500],
+  "scenes_per_chapter_target": 3,
+  "prose_density": "balanced",
+  "sentence_rhythm": "mixed",
+  "dialogue_density": "balanced",
+  "custom_style_file": null,
+  "chapter_ending_rule": "End each chapter with a meaningful turn, unresolved pressure, or emotional question.",
+  "configured_at": "2026-01-01T00:00:00Z"
+}
