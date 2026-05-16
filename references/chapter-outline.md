@@ -151,3 +151,17 @@ When a chapter plan changes, check effects on:
 If the change affects the module core, say so and ask whether to adjust the module outline as well.
 
 During prose drafting, do not silently alter a chapter outline to match a draft that drifted. Either bring the draft back to the plan, or enter explicit plan-revision mode with the user's approval.
+
+## Approval Gate
+
+Before using a chapter outline for automatic prose drafting, show a short approval packet:
+
+- active volume and chapter range
+- scene list and per-scene function
+- chapter ending interface
+- expected reader rewards
+- new characters or thin character profiles that must be resolved first
+- language/style settings that will govern prose
+- files to create or update
+
+Wait for confirmation before starting multi-scene or multi-chapter drafting. For a single user-requested scene, confirm only missing or inferred scene-card details.

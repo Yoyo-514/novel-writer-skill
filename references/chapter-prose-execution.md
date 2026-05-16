@@ -13,6 +13,7 @@ Blueprints, outlines, and volume plans are strong references, but they are not t
 ## Contents
 
 - Inputs to Load
+- Chapter Gate
 - Preflight Checks
 - Scene Execution Passes
 - Scene File Format
@@ -47,6 +48,35 @@ For long projects, manage context like the original chapter drafting workflow:
 - load the previous scene ending or previous chapter final 300-600 Chinese characters for continuity
 - re-read the custom style guide every time if `STYLE_SETTING.json` points to one
 - consult timeline before writing scenes involving travel, injury, relationship state, knowledge state, or time gaps
+
+## Chapter Gate
+
+Before drafting a chapter in autonomous mode, pause and show a compact chapter packet:
+
+```markdown
+## Gate: Chapter NN
+
+- Chapter function:
+- Scene chain:
+  - Scene 01:
+  - Scene 02:
+- Reader reward:
+- Ending interface:
+- Characters and voice risks:
+- Timeline / knowledge / relationship risks:
+- Files to create or update:
+- Proceed after approval:
+```
+
+Only skip this gate when the user explicitly allows uninterrupted batch drafting. Even then, stop if a new major/supporting character appears, the draft wants to diverge from the outline, or a consistency risk affects later chapters.
+
+After completing a chapter, report:
+
+- scene files written
+- assembled chapter file
+- major relationship, knowledge, timeline, or setting changes
+- new or updated character bible entries
+- unresolved risks before the next chapter
 
 ## Execution Passes
 
@@ -148,6 +178,7 @@ When writing multiple scenes:
 - write sequentially, never in parallel
 - run the consistency audit after every scene
 - update state after every scene
+- respect the project gates: character review, language confirmation, style confirmation, chapter gate, and post-chapter report
 - if the draft reveals a stronger direction than the plan, use Plan Drift Handling from `scene-chapter-writing.md`
 - report progress by scene first, then chapter, then volume
 - stop at user-defined gates or after major plan-affecting discoveries

@@ -133,4 +133,4 @@ python path/to/quick_validate.py .
 
 ## 许可证
 
-[MIT License](./LICENSE) © Yoyo514
+[MIT License](./LICENSE) © Yoyo-514

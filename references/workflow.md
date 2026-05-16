@@ -1,5 +1,16 @@
 # End-to-End Novel Workflow
 
+## Contents
+
+- Phase 0: Intake and Project Initialization
+- Outline Authority
+- State Model
+- Phase Order
+- Confirmation Gates
+- Gate Output Format
+- Chapter Drafting Gate
+- Manifest
+
 ## Phase 0: Intake and Project Initialization
 
 Parse the user's request for:
@@ -55,26 +66,73 @@ When state exists, offer to resume unless the user clearly asks to start fresh.
 2. Outline: create a whole-story skeleton and detailed near-term module/volume outline in `OUTLINE.md`.
 3. Scene plan: define scene cards that later assemble into chapters and volumes.
 4. Character design: create or update `CHARACTER_BIBLE.md` from the blueprint and outline.
-5. Style/language: create settings with Chinese monolingual defaults.
-6. Draft scenes: write scene files sequentially.
-7. Assemble chapters: combine approved scenes into `chNN_zh.md`.
-8. Assemble volumes: combine approved chapters into `volNN_zh.md`.
-9. Export: assemble volumes into the full novel and write TXT first.
+5. Character review gate: summarize characters, relationship map, inferred traits, missing information, and consistency risks; wait for user confirmation before automatic prose drafting.
+6. Language setup: create `LANGUAGE_SETTING.json` with Chinese monolingual defaults unless the user requested otherwise.
+7. Language confirmation gate: summarize primary language, bilingual/translation status, glossary rules, and output names; wait for user confirmation.
+8. Style setup: create `STYLE_SETTING.json` and `CHAPTER_TEMPLATE.md`.
+9. Style confirmation gate: summarize POV, tense, genre/topic profile, prose density, dialogue density, scene/chapter length, and custom style file; wait for user confirmation.
+10. Draft scenes: write scene files sequentially.
+11. Assemble chapters: combine approved scenes into `chNN_zh.md`.
+12. Assemble volumes: combine approved chapters into `volNN_zh.md`.
+13. Export: assemble volumes into the full novel and write TXT first.
 
 ## Confirmation Gates
 
-Pause before:
+Default to gated mode for full projects and any autonomous/batch writing. Pause before:
 
+- accepting or changing the creative blueprint
+- accepting or changing the whole-story outline, module outline, chapter outline, or scene plan
 - committing to a full outline restructure
-- confirming or changing the creative blueprint
 - changing `OUTLINE.md`, `CHAPTER_OUTLINE.md`, or `SCENE_PLAN.md` during prose drafting
 - moving from module outline to chapter outline
+- finishing character design and starting prose drafting
+- finishing language setup and starting prose drafting
+- finishing style setup and starting prose drafting
+- starting a new chapter in autonomous mode, unless the user explicitly approved uninterrupted batch drafting
 - starting long autonomous drafting
 - rewriting existing chapters
+- adding a recurring major/supporting character during drafting
+- making a plan drift official
 - inserting image references into prose
 - exporting over existing output files
 
-Continue without a gate for small local edits, single-scene drafting, state updates, or TXT preview assembly unless the user asked for strict review.
+Continue without a gate for small local edits, state updates, or TXT preview assembly unless the user asked for strict review.
+
+For single-scene drafting, use a light gate: confirm the scene card if it is missing or inferred, then proceed.
+
+## Gate Output Format
+
+Use short confirmation packets:
+
+```markdown
+## Gate: [Name]
+
+- Confirmed facts:
+- Inferred items needing approval:
+- Risks:
+- Files to be written or updated:
+- Next action after approval:
+```
+
+Do not bury the approval request in a long explanation. Ask clearly whether to proceed.
+
+## Chapter Drafting Gate
+
+Before each chapter in autonomous mode, show:
+
+- chapter number and volume position
+- scene chain and what each scene changes
+- reader reward and chapter-ending interface
+- characters used and any new character stubs needed
+- continuity risks from timeline, relationship, knowledge state, or outline
+- files to be created or overwritten
+
+After each chapter, pause unless the user explicitly allowed continuing:
+
+- report written scenes and assembled chapter
+- summarize state changes
+- list character/timeline/glossary updates
+- confirm whether the next chapter plan still fits
 
 ## Manifest
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lightweight repository validation for the novel-creator skill."""
+"""Lightweight repository validation for the novel-writer skill."""
 
 from __future__ import annotations
 
@@ -67,8 +67,8 @@ def validate_skill_md() -> None:
 
     if keys != ["name", "description"]:
         fail("SKILL.md frontmatter should contain only name and description")
-    if "name: novel-creator" not in frontmatter:
-        fail("SKILL.md name must be novel-creator")
+    if "name: novel-writer" not in frontmatter:
+        fail("SKILL.md name must be novel-writer")
 
 
 def validate_required_paths() -> None:
@@ -100,7 +100,7 @@ def main() -> None:
     validate_required_paths()
     validate_reference_contents()
     validate_no_command_residue()
-    print("novel-creator skill repository looks publish-ready.")
+    print("novel-writer skill repository looks publish-ready.")
 
 
 if __name__ == "__main__":

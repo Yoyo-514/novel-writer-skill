@@ -1,9 +1,9 @@
 ---
-name: novel-creator
+name: novel-writer
 description: Create, revise, draft, and export long-form fiction from outlines or rough ideas. Use when Codex is asked to write a novel, expand or repair an outline, design characters, configure prose style, draft chapters or scenes, continue a story, revise scenes, manage Chinese-first monolingual novel projects, optionally place images, or export finished drafts with TXT as the default priority format.
 ---
 
-# Novel Creator
+# Novel Writer
 
 ## Defaults
 
@@ -79,9 +79,14 @@ For small one-shot tasks, use the same workflow conceptually but avoid creating 
 
 ## Quality Gates
 
-- Before drafting a batch of scenes: confirm creative blueprint, outline or module outline, chapter/scene plan, character bible, language, and style.
+- Before autonomous drafting starts, pause at these gates by default:
+  1. Character review: summarize `CHARACTER_BIBLE.md`, relationship map, inferred traits, and consistency risks; wait for user confirmation.
+  2. Language confirmation: summarize `LANGUAGE_SETTING.json`, primary language, bilingual/translation status, glossary rules, and output filenames; wait for user confirmation.
+  3. Prose style confirmation: summarize `STYLE_SETTING.json`, POV, tense, genre/topic profile, chapter/scene length, dialogue density, and custom style file; wait for user confirmation.
+- Before drafting a batch of scenes: confirm creative blueprint, outline or module outline, chapter/scene plan, character bible, language, style, chapter range, and whether autonomous continuation is allowed.
+- Before drafting each new chapter in autonomous mode: summarize the chapter's scene chain, reader reward, ending interface, and continuity risks; wait for user approval unless the user explicitly enabled uninterrupted batch drafting.
 - Before changing an established outline or chapter outline during drafting: require a clear user instruction, then summarize ripple effects before applying the change.
-- Before batch writing: confirm chapter range and whether autonomous continuation is allowed.
+- After completing each chapter: report scene files, major state changes, new/updated characters, timeline changes, and whether the next chapter plan is still valid.
 - Before image placement: summarize selected images and insertion targets, then wait for approval.
 - Before overwriting completed chapters or outputs: create timestamped backups or ask for confirmation.
 
