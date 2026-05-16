@@ -1,4 +1,4 @@
-# Novel Creator Skill
+# Novel Writer Skill
 
 一个中文优先、场景优先的长篇小说创作 Skill。它把创作蓝图、大纲、场景规划、人物设定、章节写作、改稿、可选图片管理和 TXT 优先导出整理成一套可复用的 Agent 工作流。
 
@@ -19,7 +19,7 @@
 将本仓库克隆或复制到 Codex skills 目录后即可使用：
 
 ```bash
-git clone https://github.com/Yoyo-514/novel-creator.git
+git clone https://github.com/Yoyo-514/novel-writer-skill.git
 ```
 
 在 Codex 中触发与小说创作、改稿、导出相关的任务时，读取 `SKILL.md` 作为入口。
@@ -131,8 +131,6 @@ python -B scripts/assemble_novel.py --help
 python path/to/quick_validate.py .
 ```
 
-本仓库当前已通过 Codex skill 格式校验。
-
 ## 许可证
 
-尚未选择开源许可证。发布前请根据你的分发意图补充 `LICENSE` 文件。
+[MIT License](./LICENSE) © Yoyo514
