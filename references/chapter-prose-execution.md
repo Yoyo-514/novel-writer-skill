@@ -33,7 +33,10 @@ Load what exists and only what is relevant:
 - `OUTLINE.md`
 - `CHAPTER_OUTLINE.md`
 - `SCENE_PLAN.md`
-- `CHARACTER_BIBLE.md`
+- `CHARACTER_BIBLE.md` for small projects, or `CHARACTER_INDEX.md` plus relevant per-character files for medium/long projects
+- `WORLD_BIBLE.md` for small projects, or `WORLD_INDEX.md` plus relevant location, faction, item, weapon, ability, and term files for medium/long projects
+- `ABILITY_SYSTEM.md` whenever abilities matter, plus relevant ability/user profile files when the project uses a split ability library
+- `TERMINOLOGY.md` for small projects, or `TERM_INDEX.md` and relevant term files when the project uses a split terminology library
 - `STYLE_SETTING.json` and `CHAPTER_TEMPLATE.md`
 - selected profile from `topic-guidance.md`
 - current scene or previous scene ending
@@ -44,6 +47,7 @@ If the requested scene has no plan, create or infer a minimal scene card and con
 For long projects, manage context like the original chapter drafting workflow:
 
 - load relevant character profiles, not necessarily the full cast bible when it is too large
+- load relevant world, ability, and term files, not the whole world library
 - load the current scene plan and relevant outline slice, not the whole project by default
 - load the previous scene ending or previous chapter final 300-600 Chinese characters for continuity
 - re-read the custom style guide every time if `STYLE_SETTING.json` points to one
@@ -63,6 +67,7 @@ Before drafting a chapter in autonomous mode, pause and show a compact chapter p
 - Reader reward:
 - Ending interface:
 - Characters and voice risks:
+- World / ability / terminology risks:
 - Timeline / knowledge / relationship risks:
 - Files to create or update:
 - Proceed after approval:
@@ -76,6 +81,7 @@ After completing a chapter, report:
 - assembled chapter file
 - major relationship, knowledge, timeline, or setting changes
 - new or updated character bible entries
+- new or updated world, ability, item, weapon, or terminology entries
 - unresolved risks before the next chapter
 
 ## Execution Passes
@@ -88,11 +94,12 @@ Before prose, briefly check:
 - scene job: what changes by the end
 - POV and information boundary
 - character want, pressure, and visible behavior
+- world constraints: location, faction, item, weapon, ability, term, or rule involved
 - conflict or uncertainty
 - reader reward: cute, sweet, funny, satisfying, painful, thrilling, revealing, atmospheric, or action-focused
 - rhythm: fast entry, slow emotional beat, action burst, aftermath, or transition
 - foreshadowing to protect or plant
-- risk: weak motivation, fake conflict, exposition dump, tonal mismatch, rushed emotion, flat ending
+- risk: weak motivation, fake conflict, exposition dump, ability-rule break, item custody error, terminology overload, tonal mismatch, rushed emotion, flat ending
 
 Keep this concise. The user needs enough context to understand the craft decision, not a lecture.
 
@@ -114,11 +121,42 @@ When several choices are viable, offer options only if the user has not already 
 Before a new named character receives meaningful dialogue or action:
 
 - check whether they exist in `CHARACTER_BIBLE.md`
-- if they are major/supporting, add a compact stub first
+- for split libraries, check `CHARACTER_INDEX.md` and the relevant character folders instead
+- if they are major/supporting, add a compact stub first in the active character structure
 - include role, first appearance, one visual anchor, one personality anchor, provisional speech fingerprint, and relationship to the scene's core cast
 - if they are minor and have no continuing function, record a one-line minor entry only
 
 Do not give an unregistered major/supporting character a full voice before their speech fingerprint exists.
+
+### 2.6. New Setting / Ability / Term Gate
+
+Before a scene introduces a recurring or plot-relevant setting element:
+
+- check whether it exists in the relevant index or file
+- if not, create a compact stub before drafting
+- for small projects, add location/faction/item/weapon stubs to `WORLD_BIBLE.md`
+- for small projects, add in-world term stubs to `TERMINOLOGY.md`
+- for split libraries, use `world-library.md` for locations/factions/items/weapons
+- use `ability-system.md` for abilities, magic, systems, cultivation, special skills, or power rules
+- for split terminology libraries, use `terminology.md` for in-world terms, titles, slang, ability names, historical event names, or faction words
+- distinguish world terminology from `TRANSLATION_GLOSSARY.md`
+
+Minimum stub:
+
+```markdown
+### [Name] (stub - added VolNN ChNN SceneNN)
+**Type**: location / faction / item / weapon / ability / term
+**First appears**:
+**Function in scene**:
+- Visible or usage anchor:
+- Rule / effect / meaning:
+- Limit / cost / unknown:
+- Related characters:
+- Reveal level:
+- Notes to expand:
+```
+
+Stop for user confirmation if the new element changes core rules, ability balance, future outline logic, or reader knowledge.
 
 ### 3. Scene Draft
 
@@ -136,9 +174,13 @@ Write complete usable prose for the requested scene. Follow:
 After drafting, run a consistency audit and fix problems before saving:
 
 - physical details match the character bible
+- active location, faction, item, weapon, ability, and term details match the world library
 - dialogue matches speech fingerprints
 - behavior follows personality, motive, and current pressure
 - characters do not know information they have not learned
+- characters do not use terms, abilities, items, or world knowledge they should not know
+- abilities obey cost, limit, trigger, mastery, and counterplay rules
+- item and weapon ownership/state are continuous
 - scene result matches the planned state change
 - timeline, location, injuries, relationship status, and prior scene exit are continuous
 - all required outline beats for this scene are addressed
@@ -165,6 +207,7 @@ After a scene is drafted:
 - save it as the scene unit
 - update timeline/state
 - log new characters, word count, and important knowledge-state changes
+- update world, ability, item, weapon, and term state changes
 - check whether the chapter now has all required scenes
 - assemble the chapter only when the scene chain is coherent
 - assemble the volume only after its chapter sequence works
@@ -178,7 +221,7 @@ When writing multiple scenes:
 - write sequentially, never in parallel
 - run the consistency audit after every scene
 - update state after every scene
-- respect the project gates: character review, language confirmation, style confirmation, chapter gate, and post-chapter report
+- respect the project gates: character review, world/ability/terminology review, language confirmation, style confirmation, chapter gate, and post-chapter report
 - if the draft reveals a stronger direction than the plan, use Plan Drift Handling from `scene-chapter-writing.md`
 - report progress by scene first, then chapter, then volume
 - stop at user-defined gates or after major plan-affecting discoveries

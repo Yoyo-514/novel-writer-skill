@@ -9,6 +9,7 @@
 - Confirmation Gates
 - Gate Output Format
 - Chapter Drafting Gate
+- Library Strategy
 - Manifest
 
 ## Phase 0: Intake and Project Initialization
@@ -38,6 +39,22 @@ Plans may evolve because writing reveals better choices. When the user clearly a
 
 Initialize only the directories needed for the requested operation. For a full project, create `novel/characters`, `novel/settings`, `novel/draft/zh`, `novel/output`, and optionally `novel/assets`.
 
+Choose a library shape by project scale. Do not require both shapes at once.
+
+For small or lightweight projects, use single files as needed:
+
+- `novel/characters/CHARACTER_BIBLE.md`
+- `novel/world/WORLD_BIBLE.md`
+- `novel/world/TERMINOLOGY.md` for in-world terms
+- `novel/world/abilities/ABILITY_SYSTEM.md` when abilities, magic, systems, cultivation, or special powers exist
+
+For medium/long projects, use indexed libraries as needed:
+
+- `novel/characters/CHARACTER_INDEX.md` and per-character files
+- `novel/world/WORLD_INDEX.md`
+- `novel/world/abilities/ABILITY_SYSTEM.md`
+- `novel/world/terms/TERM_INDEX.md`
+
 ## State Model
 
 Persist progress to `novel/NOVEL_STATE.json`:
@@ -65,16 +82,21 @@ When state exists, offer to resume unless the user clearly asks to start fresh.
 1. Creative blueprint: create or revise `CREATIVE_BLUEPRINT.md`.
 2. Outline: create a whole-story skeleton and detailed near-term module/volume outline in `OUTLINE.md`.
 3. Scene plan: define scene cards that later assemble into chapters and volumes.
-4. Character design: create or update `CHARACTER_BIBLE.md` from the blueprint and outline.
-5. Character review gate: summarize characters, relationship map, inferred traits, missing information, and consistency risks; wait for user confirmation before automatic prose drafting.
-6. Language setup: create `LANGUAGE_SETTING.json` with Chinese monolingual defaults unless the user requested otherwise.
-7. Language confirmation gate: summarize primary language, bilingual/translation status, glossary rules, and output names; wait for user confirmation.
-8. Style setup: create `STYLE_SETTING.json` and `CHAPTER_TEMPLATE.md`.
-9. Style confirmation gate: summarize POV, tense, genre/topic profile, prose density, dialogue density, scene/chapter length, and custom style file; wait for user confirmation.
-10. Draft scenes: write scene files sequentially.
-11. Assemble chapters: combine approved scenes into `chNN_zh.md`.
-12. Assemble volumes: combine approved chapters into `volNN_zh.md`.
-13. Export: assemble volumes into the full novel and write TXT first.
+4. Character design: for small works, create or update `CHARACTER_BIBLE.md`; for medium/long works, create `CHARACTER_INDEX.md` and per-character files.
+5. Character library review: verify the chosen character structure and split or merge only if scale requires it.
+6. Character review gate: summarize characters, relationship map, inferred traits, missing information, and consistency risks; wait for user confirmation before automatic prose drafting.
+7. World library setup: for small works, create `WORLD_BIBLE.md`; for medium/long works, create `WORLD_INDEX.md` plus world rules, location, faction, item, and weapon files when relevant.
+8. Ability system setup: when abilities matter, create `ABILITY_SYSTEM.md`; for medium/long works, also create ability category, single ability, and per-user ability profile files.
+9. Terminology setup: for small works, create `TERMINOLOGY.md`; for medium/long works, create `TERM_INDEX.md` and term files. Keep both separate from translation glossary.
+10. World / ability / terminology review gate: summarize core rules, limits, costs, terms, inferred items, and contradictions; wait for user confirmation.
+11. Language setup: create `LANGUAGE_SETTING.json` with Chinese monolingual defaults unless the user requested otherwise.
+12. Language confirmation gate: summarize primary language, bilingual/translation status, translation glossary rules, and output names; wait for user confirmation.
+13. Style setup: create `STYLE_SETTING.json` and `CHAPTER_TEMPLATE.md`.
+14. Style confirmation gate: summarize POV, tense, genre/topic profile, prose density, dialogue density, scene/chapter length, and custom style file; wait for user confirmation.
+15. Draft scenes: write scene files sequentially.
+16. Assemble chapters: combine approved scenes into `chNN_zh.md`.
+17. Assemble volumes: combine approved chapters into `volNN_zh.md`.
+18. Export: assemble volumes into the full novel and write TXT first.
 
 ## Confirmation Gates
 
@@ -86,12 +108,14 @@ Default to gated mode for full projects and any autonomous/batch writing. Pause 
 - changing `OUTLINE.md`, `CHAPTER_OUTLINE.md`, or `SCENE_PLAN.md` during prose drafting
 - moving from module outline to chapter outline
 - finishing character design and starting prose drafting
+- finishing world, ability, or terminology setup and starting prose drafting
 - finishing language setup and starting prose drafting
 - finishing style setup and starting prose drafting
 - starting a new chapter in autonomous mode, unless the user explicitly approved uninterrupted batch drafting
 - starting long autonomous drafting
 - rewriting existing chapters
 - adding a recurring major/supporting character during drafting
+- introducing a major location, faction, item, weapon, ability, magic rule, or in-world term during drafting
 - making a plan drift official
 - inserting image references into prose
 - exporting over existing output files
@@ -124,15 +148,30 @@ Before each chapter in autonomous mode, show:
 - scene chain and what each scene changes
 - reader reward and chapter-ending interface
 - characters used and any new character stubs needed
+- world, ability, item, weapon, and term files needed
 - continuity risks from timeline, relationship, knowledge state, or outline
+- consistency risks from world rules, ability limits, item custody, terminology, or reader/character knowledge
 - files to be created or overwritten
 
 After each chapter, pause unless the user explicitly allowed continuing:
 
 - report written scenes and assembled chapter
 - summarize state changes
-- list character/timeline/glossary updates
+- list character/world/ability/term/timeline/glossary updates
 - confirm whether the next chapter plan still fits
+
+## Library Strategy
+
+Use lightweight single files for small works. Use indexed libraries for medium/long works:
+
+- Characters: `CHARACTER_BIBLE.md` for small works, or `CHARACTER_INDEX.md` plus per-character files for medium/long works.
+- World: `WORLD_BIBLE.md` for small works, or `WORLD_INDEX.md` plus rules, locations, factions, items, and weapons for medium/long works.
+- Abilities: `ABILITY_SYSTEM.md` for any project where abilities matter; medium/long works add ability category, single ability, and user profile files.
+- Terminology: `TERMINOLOGY.md` for small works, or `TERM_INDEX.md` plus term files for medium/long works.
+
+Before each scene, load only the relevant files. Do not load the entire cast or world library by default.
+
+Keep `TERMINOLOGY.md` / `TERM_INDEX.md` distinct from `TRANSLATION_GLOSSARY.md`: the former defines in-world meaning, the latter defines bilingual rendering.
 
 ## Manifest
 

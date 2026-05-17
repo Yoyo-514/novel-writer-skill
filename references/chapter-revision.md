@@ -25,6 +25,8 @@ Do not rewrite the outline to match a drifting draft unless the user explicitly 
 - author intent notes
 - relevant scene/chapter/volume plan
 - character bible
+- character index/per-character files for medium/long projects
+- world, ability, item, weapon, and terminology files relevant to the text
 - style settings and topic profile
 - known foreshadowing or future payoffs
 
@@ -54,6 +56,8 @@ For each friction point, identify the likely craft cause and an operation:
 - conflict: make stakes personal, add obstacle, add consequence
 - dialogue: add subtext, information imbalance, evasion, voice difference
 - worldbuilding: move explanation into action, cost, rule, object, or institution
+- ability system: restore trigger, cost, limit, mastery, counterplay, or reveal boundary
+- terminology: clarify in-world meaning through context, reduce term overload, or separate it from translation glossary concerns
 - pacing: expand anchor moment, cut transition, split scene, move reveal
 - depth: add emotional, cognitive, or thematic layer to a key event
 - profile fit: restore light-novel reward, CP chemistry, cinematic image, action readability, or worldbuilding payoff
@@ -100,6 +104,7 @@ End with 3-5 notes:
 - Does daily life do work?
 - Does relationship chemistry have friction and progression?
 - Are jokes and Neta natural in context?
+- Do special terms, abilities, or setting details support character interaction instead of drowning it?
 
 ## Cinematic Hybrid Revision Checks
 
@@ -107,7 +112,17 @@ End with 3-5 notes:
 - Does a flashback or montage change meaning rather than decorate?
 - Is action spatially readable and emotionally meaningful?
 - Does worldbuilding affect choices or consequences?
+- Are ability, item, weapon, and location details visually clear and causally meaningful?
 - Does a slow section provide enough interim reward?
+
+## World / Ability / Terminology Revision Checks
+
+- Does the scene contradict core world rules, location limits, faction behavior, or item/weapon state?
+- Does any ability solve a problem too easily or ignore established cost, limit, trigger, mastery, or counterplay?
+- Does the text introduce a recurring term without adding or updating the term index?
+- Does the text confuse in-world terminology with translation glossary choices?
+- Does a character use world knowledge, terms, items, or abilities they should not know or possess?
+- Has any setting change affected later outline logic, foreshadowing, or prior chapters?
 
 ## Output Shape
 

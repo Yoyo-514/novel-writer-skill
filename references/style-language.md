@@ -119,7 +119,7 @@ Recommended sections:
 
 Rules:
 
-- Pre-fill names from `CHARACTER_BIBLE.md` when possible.
+- Pre-fill names from `CHARACTER_BIBLE.md`, or from `CHARACTER_INDEX.md` and relevant per-character files in split libraries, when possible.
 - Confirmed glossary entries are binding. Do not vary them for style.
 - New unconfirmed terms go to `Pending`; do not silently invent stable terminology.
 - Translation must preserve character speech fingerprints across languages.

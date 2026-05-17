@@ -10,6 +10,7 @@
 - 写作生产顺序为 `场景 -> 章节 -> 卷 -> 全书`。
 - 大纲是强参考，写作中途允许修改，但需要用户明确指令或确认。
 - 支持中式轻小说、电影蒙太奇式人物世界观叙事等题材指导。
+- 中长篇可以拆分角色库、世界观库、能力/魔法体系和世界观术语表。
 - 拥有角色设定、语言设置、风格设置、资产映射和导出能力。
 
 ## 适用环境
@@ -19,7 +20,7 @@
 将本仓库克隆或复制到 Codex skills 目录后即可使用：
 
 ```bash
-git clone https://github.com/Yoyo-514/novel-writer-skill.git
+git clone https://github.com/Yoyo-514/novel-writer.git
 ```
 
 在 Codex 中触发与小说创作、改稿、导出相关的任务时，读取 `SKILL.md` 作为入口。
@@ -55,6 +56,10 @@ git clone https://github.com/Yoyo-514/novel-writer-skill.git
 │   ├── chapter-prose-execution.md
 │   ├── chapter-revision.md
 │   ├── character-design.md
+│   ├── character-library.md
+│   ├── world-library.md
+│   ├── ability-system.md
+│   ├── terminology.md
 │   ├── novel-style.md
 │   ├── style-language.md
 │   ├── topic-guidance.md
@@ -95,7 +100,38 @@ novel/
   NOVEL_STATE.json
   MANIFEST.md
   characters/
+    # 短篇 / 轻量项目：
     CHARACTER_BIBLE.md
+
+    # 中长篇：
+    CHARACTER_INDEX.md
+    major/
+    supporting/
+    minor/
+    relationships/
+  world/
+    # 短篇 / 轻量项目：
+    WORLD_BIBLE.md
+    TERMINOLOGY.md
+
+    # 中长篇：
+    WORLD_INDEX.md
+    rules/
+    locations/
+    factions/
+    items/
+    weapons/
+    abilities/
+      # 轻量能力体系：
+      ABILITY_SYSTEM.md
+
+      # 中长篇能力体系：
+      schools/
+      abilities/
+      users/
+    terms/
+      # 中长篇术语库：
+      TERM_INDEX.md
   settings/
     LANGUAGE_SETTING.json
     STYLE_SETTING.json

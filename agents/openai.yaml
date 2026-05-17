@@ -1,4 +1,4 @@
 interface:
   display_name: "Novel Writer"
-  short_description: "Outline, draft, revise, and export novels"
+  short_description: "Outline, draft, revise, and manage novel canon"
   default_prompt: "Use $novel-writer to turn my outline into a Chinese-first novel draft and export TXT output."

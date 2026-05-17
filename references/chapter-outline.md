@@ -33,6 +33,7 @@ Each scene needs:
 ## Chapter Planning Workflow
 
 1. Read the creative blueprint, selected topic/style guidance if any, outline, relevant module outline, character bible, style settings, and current timeline.
+   For medium/long projects, also read relevant character index entries, world index entries, ability system files, and term index entries.
 2. Identify the needed scenes first: what each scene changes and why it exists.
 3. Group scenes into chapters only after the scene chain has a readable rise, turn, and ending interface.
 4. Group chapters into the active volume only after each chapter has a clear function and cumulative payoff.
@@ -99,6 +100,8 @@ Do not write exact dialogue during planning unless the user asks for draft prose
 ### Consistency Notes
 - Character logic:
 - Setting logic:
+- Ability / item / weapon logic:
+- Terminology:
 - Timeline:
 - Risks:
 ```
@@ -161,6 +164,7 @@ Before using a chapter outline for automatic prose drafting, show a short approv
 - chapter ending interface
 - expected reader rewards
 - new characters or thin character profiles that must be resolved first
+- new locations, factions, items, weapons, abilities, or terms that need stubs first
 - language/style settings that will govern prose
 - files to create or update
 
