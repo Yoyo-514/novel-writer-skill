@@ -8,6 +8,7 @@ Chapter outlines are strong references for prose drafting. They should guide sce
 
 - Core Unit
 - Chapter Planning Workflow
+- Missing Chapter / Scene Plan Gate
 - Chapter Outline Template
 - Scene Card Template
 - Scene -> Chapter -> Volume Checks
@@ -41,6 +42,20 @@ Each scene needs:
 6. Design chapter endings as interfaces: suspense, unresolved choice, danger, promise, emotional suspension, reveal, or reward.
 7. Check consistency with the module outline and neighboring chapters.
 8. Save scene cards to `novel/settings/SCENE_PLAN.md` and chapter grouping to `novel/CHAPTER_OUTLINE.md`.
+
+## Missing Chapter / Scene Plan Gate
+
+If the module outline exists but the chapter breakdown or scene chain is empty, do not create a finished chapter outline immediately. First offer 2-3 scene-chain options and wait for the user to choose, merge, or revise.
+
+Each option should include:
+
+- scene order from small to large: scene -> chapter -> volume
+- what each scene changes
+- expected reader reward
+- ending interface
+- consistency risk or missing assumption
+
+After confirmation, write the full scene cards and chapter grouping.
 
 ## Chapter Outline Template
 
@@ -168,4 +183,4 @@ Before using a chapter outline for automatic prose drafting, show a short approv
 - language/style settings that will govern prose
 - files to create or update
 
-Wait for confirmation before starting multi-scene or multi-chapter drafting. For a single user-requested scene, confirm only missing or inferred scene-card details.
+Wait for confirmation before starting multi-scene or multi-chapter drafting. For a single user-requested scene with missing or inferred details, offer scene-card options first, then confirm the chosen card before prose.

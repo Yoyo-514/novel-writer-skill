@@ -14,6 +14,7 @@ description: Create, revise, draft, and export long-form fiction from outlines o
 - Organize production bottom-up: scene -> chapter -> volume -> full novel. Blueprints and outlines guide the work, but scenes are the smallest writing and revision unit.
 - Treat the outline and chapter outline as strong references during drafting. Follow them by default, but allow mid-writing changes when the user explicitly asks to change the plan.
 - Ask for confirmation before long autonomous drafting, large rewrites, image insertion, or overwriting finished output.
+- Treat missing or empty source material as proposal-gated. If outline, chapter plan, scene plan, worldbuilding, ability rules, terminology, or style direction is absent or too vague, first present 2-3 concise options with assumptions and tradeoffs; wait for the user to choose, merge, or modify before creating the full artifact or drafting prose.
 
 ## Project Layout
 
@@ -121,6 +122,7 @@ For small one-shot tasks, use the same workflow conceptually but avoid creating 
   3. Language confirmation: summarize `LANGUAGE_SETTING.json`, primary language, bilingual/translation status, translation glossary rules, and output filenames; wait for user confirmation.
   4. Prose style confirmation: summarize `STYLE_SETTING.json`, POV, tense, genre/topic profile, chapter/scene length, dialogue density, and custom style file; wait for user confirmation.
 - Before drafting a batch of scenes: confirm creative blueprint, outline or module outline, chapter/scene plan, character/world/ability/term libraries, language, style, chapter range, and whether autonomous continuation is allowed.
+- Before filling an empty plan or library: propose options first. Do not turn inferred setting, ability, terminology, outline, or scene-plan choices into complete canon until the user confirms the direction.
 - Before drafting each new chapter in autonomous mode: summarize the chapter's scene chain, reader reward, ending interface, and continuity risks; wait for user approval unless the user explicitly enabled uninterrupted batch drafting.
 - Before changing an established outline or chapter outline during drafting: require a clear user instruction, then summarize ripple effects before applying the change.
 - After completing each chapter: report scene files, major state changes, new/updated characters, timeline changes, and whether the next chapter plan is still valid.

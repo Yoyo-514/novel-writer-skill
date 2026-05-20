@@ -13,6 +13,7 @@ Do not rewrite the outline to match a drifting draft unless the user explicitly 
 ## Contents
 
 - Inputs
+- Missing Text / Plan Gate
 - Revision Passes
 - Chinese Light Novel Revision Checks
 - Cinematic Hybrid Revision Checks
@@ -28,9 +29,16 @@ Do not rewrite the outline to match a drifting draft unless the user explicitly 
 - character index/per-character files for medium/long projects
 - world, ability, item, weapon, and terminology files relevant to the text
 - style settings and topic profile
+- universal prose constraints from `novel-style.md`
 - known foreshadowing or future payoffs
 
 If the text is partial, say so briefly and still work from the available material.
+
+## Missing Text / Plan Gate
+
+If the user asks for a rewrite or polish but provides no usable scene/chapter text, do not invent a full rewrite. Offer 2-3 rewrite direction options or ask for the source text.
+
+If the text exists but the needed scene/chapter plan is missing, continue with critique anchored to the text, but propose plan options before making structural rewrites that would create new canon.
 
 ## Revision Passes
 
@@ -55,6 +63,7 @@ For each friction point, identify the likely craft cause and an operation:
 - motivation: add pressure, fear, want, or hidden reason
 - conflict: make stakes personal, add obstacle, add consequence
 - dialogue: add subtext, information imbalance, evasion, voice difference
+- prose constraint: remove repeated negation, denial-to-affirmation patterns, arbitrary clipped dialogue, analytical narration, needless turns, awkward intensifiers, disruptive line breaks, and overused em dashes
 - worldbuilding: move explanation into action, cost, rule, object, or institution
 - ability system: restore trigger, cost, limit, mastery, counterplay, or reveal boundary
 - terminology: clarify in-world meaning through context, reduce term overload, or separate it from translation glossary concerns
@@ -85,7 +94,8 @@ Priorities:
 3. preserve working ACG/light-novel texture
 4. keep prose readable
 5. strengthen key moments with layered meaning
-6. polish wording after structure works
+6. enforce universal prose constraints
+7. polish wording after structure works
 
 ### 4. Change Notes
 
@@ -123,6 +133,16 @@ End with 3-5 notes:
 - Does the text confuse in-world terminology with translation glossary choices?
 - Does a character use world knowledge, terms, items, or abilities they should not know or possess?
 - Has any setting change affected later outline logic, foreshadowing, or prior chapters?
+
+## Universal Prose Constraint Checks
+
+- Does the text rely on `没有...只是...`, `不是...而是...`, repeated `不...不...`, or similar rhetorical contrast habits?
+- Are motives explained when behavior could show them?
+- Does the narration summarize, evaluate, or conclude instead of dramatizing?
+- Are dialogue lines clipped into unnatural fragments without character or dramatic reason?
+- Are degree adverbs used awkwardly with nouns?
+- Are em dashes, line breaks, or punctuation creating artificial rhythm?
+- Does any metaphor or comparison feel decorative rather than perceptual?
 
 ## Output Shape
 

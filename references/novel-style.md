@@ -8,6 +8,7 @@ Use this reference to create or revise `novel/settings/STYLE_SETTING.json` and `
 - Argument Parsing
 - Custom Style File
 - Genre Guidance
+- Universal Prose Constraints
 - STYLE_SETTING.json Shape
 - Chapter Template Requirements
 - Mid-Project Changes
@@ -127,6 +128,50 @@ Use these as defaults only; the creative blueprint, topic guidance, and any cust
 
 For 中式轻小说 specifically, read `topic-guidance.md`; it adds stronger requirements around character charm, CP chemistry, light conflict, ACG context, inner commentary, and daily-life scene function.
 
+## Universal Prose Constraints
+
+Apply these constraints to generated prose, revised prose, and style-polish output. They do not apply to gate packets, planning notes, or brief craft explanations outside the prose body.
+
+### Sentence Pattern Limits
+
+- Avoid denial-to-affirmation or denial-to-explanation contrast patterns such as `没有...没有...`, `没有...只是...`, `不是...而是...`, and close variants.
+- Avoid repeated declarative negation such as `不...不...` when it creates rhetorical emphasis rather than natural speech.
+- Avoid habitual contrast frames, paired comparisons, and template-like parallel structures unless they are clearly part of a character's voice.
+- Avoid needless turns, reversals, or explanatory pivots. Let the sentence move directly through observed action and concrete detail.
+
+### Narrative Stance
+
+- Avoid analytical narration, thematic elevation, conclusive commentary, and explanatory summary inside prose.
+- Avoid explaining motives directly. Show choices, gestures, hesitations, actions, and consequences; leave the inner core for the reader to infer.
+- Avoid describing events or character actions that have not happened in the scene, unless the scene is explicitly using memory, montage, prophecy, planning, or a controlled time shift.
+- Prefer verified, present-in-scene behavior over abstract evaluation.
+
+### Dialogue
+
+- Do not reduce character speech into arbitrary fragments just to create speed.
+- Dialogue should follow the character's personality, relationship state, pressure, knowledge boundary, and speech fingerprint.
+- Avoid chaining many short lines without dramatic purpose. Short exchanges must carry pressure, rhythm, subtext, or character contrast.
+
+### Word Choice and Grammar
+
+- Use degree adverbs in typical, natural positions. Do not attach unusual degree adverbs directly to nouns or create awkward intensifier-noun phrases.
+- Prefer natural, vivid, non-template Chinese sentence shapes.
+- Keep expression direct, concrete, and effective.
+- Avoid empty metaphors, decorative comparisons, and comparisons that do not change reader perception.
+
+### Punctuation and Line Breaks
+
+- Use standard, restrained Chinese punctuation.
+- Prefer normal Chinese phrasing for pauses, turns, and supplementary information.
+- Avoid em dashes where commas, periods, semicolons, colons, or sentence restructuring would be more natural.
+- Use line breaks sparingly and accurately. Do not break lines in a way that disrupts reading flow.
+
+### Cinematic Flow
+
+- When using montage, flashback, or time/space shifts, keep the scene moving through concrete images, actions, and consequences.
+- Do not replace scene progression with summary, theme statement, or authorial conclusion.
+- Do not insert prose that sounds like waiting for user permission, instruction, or meta-action.
+
 ## STYLE_SETTING.json Shape
 
 ```json
@@ -144,6 +189,7 @@ For 中式轻小说 specifically, read `topic-guidance.md`; it adds stronger req
   "prose_density": "balanced",
   "sentence_rhythm": "mixed",
   "dialogue_density": "balanced",
+  "universal_prose_constraints": true,
   "style_notes": "Generated from genre guidance or custom style file.",
   "custom_style_file": null,
   "chapter_ending_rule": "End each chapter with a meaningful turn, unresolved pressure, or emotional question.",
@@ -164,6 +210,7 @@ Generate `CHAPTER_TEMPLATE.md` with:
 - closing pressure rule
 - transition rules
 - emotional expression constraints
+- universal prose constraints
 - character voice consistency reminder
 
 ## Mid-Project Changes
@@ -185,3 +232,4 @@ Before drafting each scene:
 - POV can support planned information control
 - target length fits the scene function
 - dialogue density matches the chapter's actual needs
+- generated prose follows the universal prose constraints

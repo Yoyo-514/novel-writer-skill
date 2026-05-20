@@ -7,6 +7,7 @@ Use this reference after a creative blueprint exists, or when the user already h
 - Purpose
 - Planning Principles
 - Outline Inputs
+- Missing Outline Proposal Gate
 - Whole-Story Skeleton
 - Module / Volume Outline Template
 - Completion Standard
@@ -38,6 +39,20 @@ When the user provides notes, characters, setting, or partial plot:
 2. Identify gaps that block outline work.
 3. Keep base character and setting details minimal unless they directly affect the current module.
 4. Ask where to start: whole skeleton, first module, repair pass, or expansion pass.
+
+## Missing Outline Proposal Gate
+
+If the blueprint, whole-story direction, or active module premise is missing, empty, or too vague, do not write a full outline immediately. First offer 2-3 outline directions and wait for user confirmation.
+
+Each option should include:
+
+- core story direction
+- likely module/volume shape
+- main character or relationship pressure
+- reader reward
+- biggest risk or missing assumption
+
+After the user chooses, merges, or modifies an option, turn the selected direction into `OUTLINE.md` or the requested module outline.
 
 ## Whole-Story Skeleton
 

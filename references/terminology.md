@@ -7,6 +7,7 @@ Do not confuse this with `TRANSLATION_GLOSSARY.md`. Terminology explains what a 
 ## Contents
 
 - Boundary with Translation Glossary
+- Missing / Empty Term Proposal Gate
 - Recommended Layout
 - Term Index
 - Term File
@@ -33,6 +34,20 @@ Use `novel/settings/TRANSLATION_GLOSSARY.md` for bilingual rendering:
 - capitalization
 - romanization
 - whether translation is fixed or context-dependent
+
+## Missing / Empty Term Proposal Gate
+
+If no in-world terminology exists yet, do not create a full glossary from assumptions. First offer 2-3 terminology strategies and wait for user confirmation.
+
+Each option should include:
+
+- term categories to track
+- tone: formal, slang-heavy, mythic, technical, factional, or mixed
+- first-appearance reveal style
+- split choice: `TERMINOLOGY.md` or `TERM_INDEX.md` plus term files
+- risk of reader confusion
+
+After the user chooses, merges, or revises an option, create the terminology library and keep it separate from `TRANSLATION_GLOSSARY.md`.
 
 Example:
 

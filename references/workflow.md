@@ -6,6 +6,7 @@
 - Outline Authority
 - State Model
 - Phase Order
+- Proposal Before Completion
 - Confirmation Gates
 - Gate Output Format
 - Chapter Drafting Gate
@@ -98,6 +99,40 @@ When state exists, offer to resume unless the user clearly asks to start fresh.
 17. Assemble volumes: combine approved chapters into `volNN_zh.md`.
 18. Export: assemble volumes into the full novel and write TXT first.
 
+## Proposal Before Completion
+
+When a requested artifact is missing, empty, or too vague, do not complete it from assumptions. First provide a compact proposal packet with 2-3 options, then wait for the user to choose, merge, or modify.
+
+This applies to:
+
+- creative blueprint and writer vision
+- whole-story outline, module outline, chapter outline, or scene plan
+- character, world, ability, item, weapon, and terminology libraries
+- language and prose style settings
+- prose drafting when no usable scene card exists
+
+Use this shape:
+
+```markdown
+## Proposal: [Area]
+
+[1.1] [Option name]
+- Core direction:
+- What it enables:
+- Risk:
+- Assumptions:
+
+[1.2] [Option name]
+- Core direction:
+- What it enables:
+- Risk:
+- Assumptions:
+
+Options can be merged. After you choose or revise one, I will turn it into the full file/outline/scene plan/prose draft.
+```
+
+Only skip this proposal step when the user explicitly asks Codex to decide and proceed.
+
 ## Confirmation Gates
 
 Default to gated mode for full projects and any autonomous/batch writing. Pause before:
@@ -122,7 +157,7 @@ Default to gated mode for full projects and any autonomous/batch writing. Pause 
 
 Continue without a gate for small local edits, state updates, or TXT preview assembly unless the user asked for strict review.
 
-For single-scene drafting, use a light gate: confirm the scene card if it is missing or inferred, then proceed.
+For single-scene drafting, use a light gate. If the scene card is missing or inferred, offer scene-card options first; proceed only after the user confirms or explicitly asks Codex to decide.
 
 ## Gate Output Format
 

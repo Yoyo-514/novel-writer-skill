@@ -7,6 +7,7 @@ For short works, `WORLD_BIBLE.md` can be a single file. For medium/long works, u
 ## Contents
 
 - When to Use
+- Missing / Empty Setting Proposal Gate
 - Recommended Layout
 - World Index
 - Core Rule Files
@@ -30,6 +31,21 @@ Create or update the world library when the story includes:
 - historical events or cultural rules that shape choices
 
 Do not overbuild background lore that does not affect scenes, character choices, conflict, or reader expectation.
+
+## Missing / Empty Setting Proposal Gate
+
+If the setting library is absent, empty, or only says "needs worldbuilding", do not write a complete `WORLD_BIBLE.md` or `WORLD_INDEX.md` immediately. First offer 2-3 setting architecture options and wait for user confirmation.
+
+Each option should include:
+
+- setting premise and story function
+- recommended library shape: single file or indexed library
+- required core rules, locations, factions, items, or weapons
+- how the setting pressures character choices
+- reveal approach
+- biggest consistency risk
+
+After the user chooses, merges, or edits an option, create the full world library files.
 
 ## Recommended Layout
 

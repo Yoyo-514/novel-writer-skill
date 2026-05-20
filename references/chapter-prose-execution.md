@@ -14,6 +14,7 @@ Blueprints, outlines, and volume plans are strong references, but they are not t
 
 - Inputs to Load
 - Chapter Gate
+- Missing Scene Plan Gate
 - Preflight Checks
 - Scene Execution Passes
 - Scene File Format
@@ -38,11 +39,12 @@ Load what exists and only what is relevant:
 - `ABILITY_SYSTEM.md` whenever abilities matter, plus relevant ability/user profile files when the project uses a split ability library
 - `TERMINOLOGY.md` for small projects, or `TERM_INDEX.md` and relevant term files when the project uses a split terminology library
 - `STYLE_SETTING.json` and `CHAPTER_TEMPLATE.md`
+- universal prose constraints from `novel-style.md`
 - selected profile from `topic-guidance.md`
 - current scene or previous scene ending
 - `TIMELINE.md`, foreshadowing notes, glossary, or user-provided intent notes
 
-If the requested scene has no plan, create or infer a minimal scene card and confirm before long drafting.
+If the requested scene has no usable plan, do not draft prose yet. Offer 2-3 minimal scene-card options, wait for the user to choose, merge, or revise, then draft from the confirmed card.
 
 For long projects, manage context like the original chapter drafting workflow:
 
@@ -84,6 +86,19 @@ After completing a chapter, report:
 - new or updated world, ability, item, weapon, or terminology entries
 - unresolved risks before the next chapter
 
+## Missing Scene Plan Gate
+
+When no scene card exists, the correct output is a proposal packet, not prose. Include:
+
+- scene goal
+- obstacle or pressure
+- state change
+- reader reward
+- ending beat
+- missing assumptions
+
+Only draft immediately if the user explicitly says to decide and proceed. If the user asks for "continue" but the next scene is undefined, propose next-scene options first.
+
 ## Execution Passes
 
 ### 1. Scene Fit Check
@@ -114,7 +129,7 @@ State the chosen execution path:
 - image/sensory anchor: concrete object, gesture, sound, weather, spatial movement, light, wound, prop, or architecture
 - exit: hook, reward, decision, reveal, aftertaste, or transition
 
-When several choices are viable, offer options only if the user has not already fixed the direction. Otherwise choose and draft.
+When several choices are viable, offer options if the user has not already fixed the direction. If the plan is missing or empty, options are mandatory. Otherwise choose and draft.
 
 ### 2.5. New Character Gate
 
@@ -170,6 +185,7 @@ Write complete usable prose for the requested scene. Follow:
 - type fit: satisfy the selected topic profile
 - pacing: slow down for high-value character, reveal, action, or emotional moments; compress low-value transitions
 - foreshadowing protection: do not spend or erase planned mysteries accidentally
+- universal prose constraints: avoid analysis, summary, template contrasts, repeated negation, awkward intensifiers, arbitrary clipped dialogue, overused em dashes, and disruptive line breaks
 
 After drafting, run a consistency audit and fix problems before saving:
 
@@ -184,6 +200,7 @@ After drafting, run a consistency audit and fix problems before saving:
 - scene result matches the planned state change
 - timeline, location, injuries, relationship status, and prior scene exit are continuous
 - all required outline beats for this scene are addressed
+- prose does not contain forbidden contrast/negation habits, explanatory motive statements, unnecessary summary, or nonstandard punctuation habits
 
 For Chinese light novel:
 

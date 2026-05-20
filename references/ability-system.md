@@ -7,6 +7,7 @@ Ability systems should not be buried in the general world bible. They need separ
 ## Contents
 
 - When to Use
+- Missing / Empty Ability Proposal Gate
 - Recommended Layout
 - Ability System File
 - Ability School File
@@ -27,6 +28,22 @@ Create ability files when the story includes:
 - non-combat problem solving through special powers
 - progression, training, awakening, mutation, unlocking, leveling, or mastery
 - ability secrets, hidden costs, counters, or school/faction techniques
+
+## Missing / Empty Ability Proposal Gate
+
+If the ability, magic, cultivation, system, or power rules are absent or empty, do not write a complete ability system immediately. First offer 2-3 system models and wait for user confirmation.
+
+Each option should include:
+
+- source of power
+- trigger and growth method
+- cost, limit, and counterplay
+- user-facing reader appeal
+- reveal strategy
+- plot-break risk
+- recommended file layout
+
+After the user chooses, merges, or revises an option, create `ABILITY_SYSTEM.md` and any needed school, ability, or user-profile files.
 
 ## Recommended Layout
 
