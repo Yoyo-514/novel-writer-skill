@@ -167,6 +167,10 @@ python -B scripts/assemble_novel.py --help
 python path/to/quick_validate.py .
 ```
 
+## 参考
+
+[auto-novel-creator](https://github.com/TohmaN233/auto-novel-creator)
+
 ## 许可证
 
 [MIT License](./LICENSE) © Yoyo-514
